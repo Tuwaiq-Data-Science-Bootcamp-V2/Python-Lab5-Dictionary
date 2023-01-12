@@ -1,0 +1,139 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "32d23a45",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Amal\n",
+      "Mohammed\n",
+      "Khadijah\n",
+      "Abdullah\n",
+      "Rawan\n",
+      "Faisal\n",
+      "Layla\n"
+     ]
+    }
+   ],
+   "source": [
+    "Build_phone={\n",
+    "    \"owner1\" : {\n",
+    "    \"Name\" : \"Amal\",\n",
+    "    \"Number\" : 1111111111\n",
+    "  },\n",
+    "  \"owner2\" : {\n",
+    "    \"Name\" : \"Mohammed\",\n",
+    "    \"Number\" : 2222222222\n",
+    "  },\n",
+    "  \"owner3\" : {\n",
+    "    \"Name\" : \"Khadijah\",\n",
+    "    \"Number\" : 3333333333\n",
+    "  },\n",
+    "   \"owner4\" : {\n",
+    "    \"Name\" : \"Abdullah\",\n",
+    "    \"Number\" : 4444444444\n",
+    "  },\n",
+    "  \"owner5\" : {\n",
+    "    \"Name\" : \"Rawan\",\n",
+    "    \"Number\" : 5555555555\n",
+    "  },\n",
+    "  \"owner6\" : {\n",
+    "    \"Name\" : \"Faisal\",\n",
+    "    \"Number\" : 6666666666\n",
+    "  },\n",
+    "  \"owner7\" : {\n",
+    "    \"Name\" : \"Layla\",\n",
+    "    \"Number\" : 7777777777\n",
+    "  }\n",
+    "}\n",
+    "\n",
+    "for p_id, p_info in Build_phone.items():\n",
+    "    print(p_info[\"Name\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "id": "85f6e186",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the number: 7777777777\n",
+      "Layla\n"
+     ]
+    }
+   ],
+   "source": [
+    "lisNumber=[]\n",
+    "lisName=[]\n",
+    "num=0\n",
+    "\n",
+    "x=input(\"Enter the number: \")\n",
+    "\n",
+    "if len(x)<10 or len(x)>10:\n",
+    "    print(\"This is invalid number\")\n",
+    "else:\n",
+    "    try:\n",
+    "        x=int(x)\n",
+    "        val=int(x)\n",
+    "        for p_id, p_info in Build_phone.items():\n",
+    "            lisNumber.append(p_info[\"Number\"])\n",
+    "            lisName.append(p_info[\"Name\"])\n",
+    "        if val in lisNumber:\n",
+    "            num=lisNumber.index(val)\n",
+    "            print(lisName[num])\n",
+    "        else:\n",
+    "             print(\"Sorry, the number is not found\")\n",
+    "    except valueError:\n",
+    "            print(\"This is invalid number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ce37e89f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cdfa670c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
