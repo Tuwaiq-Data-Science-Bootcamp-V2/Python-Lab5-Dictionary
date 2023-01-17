@@ -1,4 +1,4 @@
-# Day5-Lab2-Dictionary
+# Python-Lab5-Dictionary
 
 Build a phone book program that receives the phone number, and returns the name of the owner. You can follow the table below:
 
